@@ -20,7 +20,7 @@ def probe():
     pass
 
   # Allow overriding default path to lldb executable with the LLDB environment variable
-  lldb_executable = 'lldb'
+  lldb_executable = 'rust-lldb'
   if 'LLDB' in os.environ and os.path.exists(os.environ['LLDB']):
     lldb_executable = os.environ['LLDB']
 
